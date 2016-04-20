@@ -1,0 +1,177 @@
+body {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	color: #404040;
+}
+
+label {
+	font-weight: normal;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+p.title {
+	font-size: 18px;
+}
+
+header {
+	border-bottom: 1px solid #dddddd;
+	padding: 25px 0;
+}
+
+.setting,
+.check-category,
+.need-ideas{
+	border-top: 1px solid #dddddd;
+	padding: 40px 0;
+}
+
+.setting {
+	border-top: 0;
+}
+
+.setting .title,
+.check-category .title,
+.need-ideas .title {
+	margin-bottom: 20px;
+}
+.setting .setting-form {
+	display: table;
+}
+.setting .setting-form label,
+.setting .setting-form input {
+	display: inline-table;
+	vertical-align: middle;
+	width: 49%;
+	margin: 0 0 10px 0;
+}
+input[type="text"],
+input[type="email"],
+input[type="telp"],
+select,
+.btn-primary {
+	padding: 10px;
+	outline: none;
+	border: 1px solid #dddddd;
+	height: 50px;
+	box-sizing: border-box;
+}
+
+.btn-primary {
+	border: 0;
+	font-weight: 500;
+	-webkit-transition: all 0.7s ease;
+	transition: all 0.7s ease;
+}
+
+.btn-primary:hover {
+	-webkit-transition: all 0.7s ease;
+	transition: all 0.7s ease;
+	opacity: .6;
+}
+
+.check-category-form input,
+.check-category-form select {
+	width: 100%;
+	display: block;
+	margin: 0 0 10px 0;
+}
+
+.need-ideas .btn-primary {
+	background: #ec8924;
+	height: auto;
+    padding: 17px 30px;
+    font-weight: 500;
+}
+
+.font-red {
+	color: #d32f2f;
+}
+
+.routers {
+	padding: 50px 0;
+	background: #f9f9f9;
+	border-top: 1px solid #dddddd;
+}
+
+.table-zebra thead tr>th{
+	background: #384557;
+	border-bottom: 0;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-weight: normal;
+}
+
+.table-zebra>tbody>tr>td, 
+.table-zebra>tbody>tr>th, 
+.table-zebra>tfoot>tr>td, 
+.table-zebra>tfoot>tr>th, 
+.table-zebra>thead>tr>td, 
+.table-zebra>thead>tr>th {
+	padding: 15px;
+	border: 0;
+}
+
+.table-zebra>tbody>tr:nth-child(2n+2) {
+	background: #ededed;
+}
+
+.table-zebra {
+	margin-bottom: 40px;
+}
+
+.icon-title {
+	padding: 25px 0;
+}
+.icon-title img,
+.icon-title .title{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.icon-title .title{
+	font-size: 18px;
+	font-weight: bold;
+	color: #1c80b1;
+	text-transform: uppercase;
+	margin: 0 0 0 10px;
+}
+
+#footer {
+	border-top: 1px solid #dddddd;
+	padding: 30px 0;
+}
+
+#footer .copyright {
+	font-size: 14px;
+	margin-bottom: 0;
+}
+
+@media ( max-width: 768px ) {
+	header .logo {
+		display: block;
+		margin: auto;
+		text-align: center;
+	}
+	#footer .copyright {
+		text-align: center;
+	}
+}
+@media ( max-width: 480px ) {
+	.setting .setting-form {
+	    display: block;
+	}
+	.setting .setting-form label, 
+	.setting .setting-form input {
+		display: block;
+		width: 100%;
+	}
+	.setting .setting-form input {
+		margin-bottom: 20px;
+	}
+	.need-ideas .btn-primary {
+		width: 100%;
+	}
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Title {60 characters}</title>
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="style.css">        
+</head>
+<body>
+	<div id="cfx-register">
+		<div class="cfx-box-social-media-login">
+		<h3>Login to your Faceboo or Twitter</h3>
+		<a href="#facebook"><img src="login-facebook.png"></a>
+		<a href="#twitter"><img src="login-twitter.png"></a>
+		</div>
+		<form name="loginform" class="cfx-register-form" id="loginform" action="/onetreematters/login/" method="post" lpchecked="1">
+			<h3>or Register</h3>
+			<p>
+				<label for="user_login">Fullname</label>
+				<label class="cfx-input-form"><input type="text"></label>
+			</p>
+			<p>
+				<label for="user_photo">Photo</label>
+				<label class="cfx-input-form">
+					<img src="login-img.png">
+					<label class="cfx-file-upload">
+					<input type="file" class="cfx-btn-photo">
+					<small>Maximum file size of 2MB</small>
+					</label>
+				</label>
+			</p>
+			<p>
+				<label for="user_dob">Date of Birth</label>
+				<label class="cfx-input-form">
+					<select class="cfx-mount">
+					  <option>Januari</option>
+					  <option>Febuari</option>
+					</select>
+					<select class="cfx-day">
+					  <option>10</option>
+					  <option>11</option>
+					</select>
+					<select class="cfx-year">
+					  <option>1990</option>
+					  <option>2000</option>
+					</select>
+				</label>
+			</p>
+			<p>
+				<label for="user_gender">Gender</label>
+				<label class="cfx-input-form">
+					<label class="cfx-gender"><input type="radio" value="male" selected> Male</label>
+					<label class="cfx-gender"><input type="radio" value="female"> Female</label>
+				</label>
+			</p>
+			<p>
+				<label for="user_country">Country</label>
+				<label class="cfx-input-form">
+					<select class="cfx-country">
+						<option>Jakarta</option>
+						<option>Bekasi</option>
+					</select>
+				</label>
+			</p>
+			<p>
+				<label for="user_email">Email</label>
+				<label class="cfx-input-form"><input type="email"></label>
+			</p>
+			<p>
+				<label for="user_pass">Password</label>
+				<label class="cfx-input-form"><input type="password"></label>
+			</p>
+
+			<p class="submit">
+				<input type="submit" name="wp-submit" id="wp-submit" value="Register">
+			</p>
+		</form>
+	</div>
+</body>
+</html>

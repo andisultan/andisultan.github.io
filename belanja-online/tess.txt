@@ -1,0 +1,94 @@
+Membuat slide dengan Owl Carousel
+
+Owl carousel memudahkan developer yang ingin membuat slide baik itu untuk slider tunggal yang biasa diletakan diatas pada halaman awal wesite, ataupun untuk membuat slide untuk keperluan lainnya seperti slide testimoni, slide product pada ecommerce, maupun slide untuk daftar logo brand pada website.
+Cara menggunakannya pun cukup mudah, yaitu :
+
+Download Owl Carousel di websitenya 
+Buat HTML dan tambahkan kode Javascriptnya dan CSSnya seperti dibahaw ini:
+	<!-- Important Owl stylesheet -->
+	<link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+	 
+	<!-- Default Theme -->
+	<link rel="stylesheet" href="owl-carousel/owl.theme.css">
+	 
+	<!--  jQuery 1.7+  -->
+	<script src="jquery-1.9.1.min.js"></script>
+	 
+	<!-- Include js plugin -->
+	<script src="assets/owl-carousel/owl.carousel.js"></script>
+
+Lalu sisipkan kode berikut dalam diantara <body> dan </body>
+	<div id="owl-demo" class="owl-carousel">
+	  <div> Your Content </div>
+	  <div> Your Content </div>
+	  <div> Your Content </div>
+	  <div> Your Content </div>
+	  <div> Your Content </div>
+	  <div> Your Content </div>
+	  <div> Your Content </div>
+	</div>
+	
+Masukan kode Javascript untuk menjalan owl carousel, seperti berikut :
+	$("#owl-demo").owlCarousel({ 
+		items : 3,
+		navigation : true 
+	});
+
+Kode selengkapanya menjadi seperti ini
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Owl Carousel</title>
+	<link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+	<link rel="stylesheet" href="owl-carousel/owl.theme.css">
+	<script src="jquery-1.9.1.min.js"></script>
+	<script src="assets/owl-carousel/owl.carousel.js"></script>
+	<script>
+		$("#owl-demo").owlCarousel({ 
+			items : 3,
+			navigation : true 
+		});
+	</script>
+</head>
+<body>
+	<div id="owl-demo" class="owl-carousel">
+	  <div> Your Content </div>
+	  <div> Your Content </div>
+	  <div> Your Content </div>
+	  <div> Your Content </div>
+	  <div> Your Content </div>
+	  <div> Your Content </div>
+	  <div> Your Content </div>
+	</div>
+</body>
+</html>
+
+
+Jika ingin menggunakan banyak slide, maka cukup dengan mengganti id owl carouselnya. Dan Owl Carousel bisa anda gunakan sesuai kebutuhan.
+
+
+
+Keungualan Owl Carousel :
+Selain mudah digunakan owl carousel memiliki kelebihan yaitu, data yang ditampilkan bisa kita atur sesuai kebutuhan saat responsive. Untuk pengaturan adalah sebagai barikut :
+	$("#owl-demo").owlCarousel({
+		items : 7,
+		itemsDesktop : [1199,7],
+		itemsDesktopSmall : [980,5],
+		itemsTablet: [768,4],
+		itemsTabletSmall: false,
+		itemsMobile : [479,2],
+		autoHeight : true,
+		slideSpeed : 600,
+		paginationSpeed : 1200,
+		rewindSpeed : 1400,
+		pagination : true,
+		singleItem : false,
+		itemsScaleUp : false,
+		navigation : true
+	});
+dan masih banyak lagi.
+
+Demikain ulasan singkat mengenail owl carousel, untuk lebih jelasnya silahkan kunjungi situs resminya di . Semoga bermanfaat

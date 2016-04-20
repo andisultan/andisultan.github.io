@@ -1,0 +1,183 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+	display: block;
+}
+
+audio,
+canvas,
+video {
+	display: inline-block;
+	max-width: 100%;
+}
+
+html {
+	overflow-y: scroll;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust:     100%;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	color: #2b2b2b;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+body {
+	background: #ffffff;
+}
+/* custom */
+#cfx-register{
+	max-width: 510px;
+	width: 100%;
+	padding: 45px;
+	background: rgba(1, 4, 1, 0.5);
+	color: #ffffff;
+	margin: 0 auto;
+}
+.cfx-box-social-media-login{
+	text-align: center;
+	border-bottom: 3px dotted #ffffff;
+	padding-bottom: 30px;
+}
+	.cfx-box-social-media-login h3,
+	.cfx-register-form h3{
+		font-size: 24px;
+		line-height: 30px;
+		padding-bottom: 30px;
+	}
+	.cfx-box-social-media-login img{
+		padding-bottom: 10px;
+	}
+	.cfx-register-form h3{
+		padding-top: 40px;
+		text-align: center;
+	}
+	.cfx-register-form small{
+		font-size: 14px;
+	}
+	.cfx-register-form input,
+	.cfx-register-form select{
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		border: none;
+		color: #868484;
+		height: 39px;		
+	}
+	.cfx-register-form input[type="radio"]{
+		height: auto;
+	}
+	.cfx-register-form p > label:first-child,
+	.cfx-register-form .cfx-gender{
+		line-height: 39px;
+	}
+	.cfx-register-form .cfx-gender{
+		margin: 0 15px;
+	}
+	.cfx-register-form select{
+		background: #ffffff url(select.png) no-repeat center right;
+		padding-right: 39px;
+		appearance: none;
+		-moz-appearance: none;
+		-webkit-appearance: none; 
+	}	
+	.cfx-register-form p{
+		display: block;
+		clear: both;
+		padding: 10px 0;	
+		margin: 0;
+	}
+	.cfx-register-form .cfx-input-form{
+		width: 71%;
+		float: right;
+	}
+	.cfx-register-form .cfx-input-form input[type="text"],
+	.cfx-register-form .cfx-input-form input[type="email"],
+	.cfx-register-form .cfx-input-form input[type="password"],
+	.cfx-register-form .cfx-input-form .cfx-country{
+		width: 100%;
+	}
+	.cfx-file-upload{
+		float: right;
+		width: 75%;		
+	}
+	.cfx-file-upload input[type=file]{
+		width: 100%;
+	}
+	.cfx-register-form  p.submit{
+		text-align: center;
+	}
+	.cfx-register-form p.submit input{
+		background: #066692;
+		color: #ffffff;
+		border: none;
+		border-radius: 4px;
+		padding: 10px;
+		height: auto;
+		max-width: 300px;
+		width: 100%;
+		font-size: 24px;
+		text-transform: uppercase;
+		margin-top: 20px;
+	}
+@media screen and (max-width: 673px) {
+	#cfx-register{
+		padding: 3%;
+		width: 94%;
+	}
+	#cfx-register img{
+		max-width: 100%;
+	}
+	.cfx-register-form p{
+		padding: 0;
+	}
+	.cfx-register-form p > label{
+		font-size: 14px;
+		width: 100% !important;
+	}
+	.cfx-register-form input,
+	.cfx-register-form select{
+		font-size: 14px;
+		height: 30px;		
+	}
+	.cfx-register-form p > label:first-child{
+		padding-top: 10px;
+		display: block;
+		line-height: 25px;
+	}
+	.cfx-register-form .cfx-gender{
+		line-height: 23px;
+	}
+	.cfx-register-form small{
+		font-size: 12px;
+	}
+	.cfx-register-form .cfx-input-form > img{
+		width: 23%;
+	}
+}

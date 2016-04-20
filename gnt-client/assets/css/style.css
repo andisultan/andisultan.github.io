@@ -1,0 +1,362 @@
+/*
+    Theme Name: Video Marketing - Sales Letter
+    Theme URL: http://www.calibreworks.com/
+    Description: Video Marketing - Sales Letter
+    Author: Calibreworks
+    Author URI: http://www.calibreworks.com
+    Version: 1.0.0
+    Template: calibrefx
+    Text Domain: Video Marketing - Sales Letter
+*/
+
+/* Typography
+------------------------------------------------------------ */
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700);
+body{
+	background-color: #fff;
+	color: #51565e;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+}
+.center{
+	margin-left: auto;
+	margin-right: auto;
+}
+.container{
+	text-align: center;
+	max-width: 1260px;
+}
+ul.checklist{
+	list-style: none;
+	padding: 0;
+	margin: 20px 0;
+}
+.checklist li{
+	background: url(../images/li.png) no-repeat 0 7px;
+	padding: 5px 0 0 40px;
+	margin: 20px 0;
+	text-align: left;
+}
+	.fa{
+		display: inline-block;
+		width: 71px;
+		height: 71px;
+	}
+	.icon1{
+		background: url(../images/mangkuk.png) no-repeat center;
+	}
+	.icon2{
+		background: url(../images/tubuh.png) no-repeat center;
+	}
+	.icon3{
+		background: url(../images/keranjang.png) no-repeat center;
+	}
+	.icon4{
+		background: url(../images/lambung.png) no-repeat center;
+	}
+	.icon5{
+		background: url(../images/orang.png) no-repeat center;
+	}
+	.icon6{
+		background: url(../images/pesan.png) no-repeat center;
+	}
+/* heading 
+---------------------------------------- */
+h1,h2,h3{ font-weight: 300; color: #153a53; }
+h1{ font-size: 48px; }
+h2{ font-size: 40px; }
+h3{ font-size: 36px; margin-bottom: 25px;}
+p{ padding: 7px 0; line-height: 35px;}
+/* header
+---------------------------------------- */
+header{
+	padding: 20px 0;
+}
+header ul.logo{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+header .logo li{
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 20px;
+}
+/* section
+---------------------------------------- */
+#section1{ /* section1 ---------------------------------------- */
+	background: #C8E1AB;
+}
+#section2{ /* section2 ---------------------------------------- */
+	background: #434956;
+}
+#section2 .box{
+	max-width: 720px;
+	float: left;
+	color: #fff;
+	font-size: 16px;
+}
+#section2 img{
+	float: right;
+	margin-right: -100px;
+}
+#section2 h2{
+	color: #fff;
+	font-size: 48px;
+	font-weight: bold;
+	text-align: left;
+	margin-top: 50px;
+}
+#section3{ /* section3 ---------------------------------------- */
+	background: #5aa442;
+	color: #fff;
+	text-align: left;
+}
+#section3 .box{
+	max-width: 710px;
+	float: right;
+	font-size: 16px;
+}
+#section3 img{
+	float: left;
+	margin-left: -100px;
+}
+#section3 h2{
+	color: #fff;
+	font-size: 36px;
+	font-weight: bold;
+	text-align: left;
+	margin-top: 60px;
+}
+#section3 p{
+	text-align: left;
+}
+#section4{ /* section4---------------------------------------- */
+	background: #ffffff;
+	padding: 45px 0;
+}
+#section4 .blok{
+	margin-top: 30px;
+	text-align: left;
+}
+#section4 h2{
+	font-size: 48px;
+}
+#section4 h2 span{
+	font-weight: bold;
+}
+#section4 li{
+	text-align: left;
+}
+#section4 hr,#section5 hr{
+	background: url(../images/hr.png) no-repeat center top;
+	height: 10px;
+	border: none;
+}
+#section4 hr{ margin-bottom: 50px; }
+#section5{ /* section5---------------------------------------- */
+	background: #efefef;
+	padding: 45px 0 0 0;
+}
+#section5 .buy-now{
+	text-decoration: none;
+	color: #fff;
+	font-size: 22px;
+	font-weight: bold;
+	background: #E7B815;
+	border-bottom: 2px solid #D4A912;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding: 15px;
+	max-width: 300px;
+	width: 100%;
+	margin: 10px auto 40px auto;
+	display: inline-block;
+}
+#section5 .buy-now:hover{
+	background: #D4A912;
+}
+#section5 .produk{
+	background: #fff;
+	border: 1px solid #ddd;
+	margin-bottom: 30px;
+}
+#section5 .produk-img{
+	border-bottom: 1px solid #ddd;
+	min-height: 255px;
+	vertical-align: middle;
+}
+#section5 .produk p,
+#section5 .produk h3{
+	padding: 0 15px;
+	text-align: left;
+}
+#section5 .produk h3{
+	margin-bottom: 10px;
+}
+#section5 .produk h3{
+	font-size: 30px;
+	font-weight: bold;
+	color: #55a73a;
+}
+#section5 .qty{
+	width: 100%;
+	height: 50px;
+}
+#section5 .produk span{
+	line-height: 50px;
+}
+#section5 .produk input{
+	width: 50%;
+	height: 50px;
+	float:right;
+	border: none;
+	border-left: 1px solid #ddd;
+	text-align: center;
+}
+#section5 .price{
+	width: 100%;
+	padding: 15px 0;
+	background: #434956;
+	color: #fff;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+}
+#section5 .col-md-12{
+	margin-bottom: 30px;
+}
+#section5 h2{
+	color: #434956;
+	font-size: 48px;
+}
+#section6{ /* section6 ---------------------------------------- */
+	background: #2a2f36;
+	color: #61646D;
+	font-size: 14px;
+}
+#section6 p{
+	line-height: 25px;
+	margin: 20px 0;
+}
+#section6 .container{
+	border-bottom: 1px solid #3D414C;
+}
+#section9{ /* section9 ---------------------------------------- */
+	background: #2a2f36 url(../images/testimoni.png) no-repeat center top;
+	padding: 40px 0;
+	background-size: cover;
+}
+#section9 h1,
+#section9 p,
+#section9 p.small{
+	color: #fff;
+}
+#section9 p.bold,
+#section9 p.small{
+	line-height: 25px;
+	margin: 0;
+	padding: 0;
+}
+#section9 p{
+	font-size: 22px;
+}
+#section9 p.small{
+	font-size: 18px;
+}
+#section9 img{
+	margin: 25px 0;
+}
+#section9 .carousel-indicators{
+	bottom: -40px;
+}
+#section9 .carousel-indicators li{
+	background: #354350;
+	border: none;
+}
+#section9 .carousel-indicators .active{
+	background: #fff;
+}
+
+#section10{ /* section10---------------------------------------- */
+	background: #fff;
+}
+footer{
+	background: #2a2f36;
+	padding: 10px 0 0 0;	
+	font-size: 14px;
+	color: #51565e;	
+}
+footer p{
+	padding: 5px 0;
+}
+footer p.txt-copy{
+	float: left;
+}
+footer p.txt-copy a{
+	color: #656871;	
+	text-decoration: none;
+	font-weight: bold;
+}
+footer p.txt-copy a:hover{
+	color: #AFAFB0;
+}
+footer p.txt-logo{
+	float: right;
+}
+/* media query - responsive
+------------------------------------------------------------------------------------- */
+@media (max-width: 992px) {
+	#section2 .box{
+		max-width: 100%;
+		float: right;
+	}
+	#section2 h2{
+		margin-top: 30px;
+	}
+	#section2 img{
+		margin: 0 auto 30px auto;
+		float: none;
+		width: 300px;
+	}
+	#section3 .box{
+		max-width: 100%;
+	}
+	#section3 h2{
+		margin-top: 30px;
+	}
+	#section3 img{
+		margin: 30px auto 0 auto;
+		float: none;
+		width: 300px;
+	}
+	
+}
+@media (max-width: 767px) {
+	#section4 .col-md-2{
+		text-align: center;
+	}
+	header ul.logo{
+		float: none;
+	}
+	header .logo li{
+		padding: 15px 10px 0 10px;
+	}
+}
+@media (max-width: 479px) {
+    footer p.txt-copy,
+    footer p.txt-logo{
+		float: none;
+	}
+	#section9 p {
+		font-size: 18px;
+	}
+}
+@media (max-width: 320px) {
+	#section2 img,
+	#section3 img{
+		width: 250px;
+	}
+}
