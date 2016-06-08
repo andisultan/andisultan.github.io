@@ -1,322 +1,162 @@
 <!DOCTYPE html>
+<!--
+Follow me!
+dribbble.com/gsvineeth
+twitter.com/gsvineeth
+-->
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Walter Bayliss | Sales Letter</title>
-	<link rel="stylesheet" href="assets/css/bootstrap.css">
-	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,900,500' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,900,500' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="assets/css/animate.css">
-	<link rel="stylesheet" href="assets/css/color.css">
-	<link rel="stylesheet" href="assets/css/responsive.css">
-	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- jQuery from CDN -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <script src="js/jribbble.js"></script>
+      <script src="js/bootstrap.js"></script>
+<script>
+
+$(document).ready(function()
+    //Paste your Client Access Token in the line below within quotes - you can build your API from https://dribbble.com/account/applications 
+    $.jribbble.setToken('31ab7fc9c25cbe4122efa08d82d5ee0998685a63cd93f0fd763045abb4bbd67d');
+    $.jribbble.users('gsvineeth').shots({per_page: 36}).then(function(shots) {
+    var html = [];
+  
+    shots.forEach(function(shot) {
+        html.push('<div class="col-sm-6 col-md-4 col-lg-4"> <div class="grid-list">');
+        html.push('<a href="' + shot.html_url + '" target="_blank">');
+        html.push('<img class="img-responsive" src="' + shot.images.normal + '" alt="' + shot.title + '"><\/a>');
+        html.push('<div class="overlay"><a target="_blank"  href="' + shot.html_url + '">');
+        html.push('<h2>' + shot.title + '<\/h2>');
+        html.push('<\/a> <\/div><\/div><\/div>');
+    });
+  
+    $('#shots').html(html.join(''));
+    });
+});
+ 
+        </script>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    
+    <title>Portfolio Theme by gsvineeth.com </title>
+    
+    <!-- Bootstrap + Font Awesome + Main CSS -->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- customize this file if needed -->
+    <link href="css/main.css" rel="stylesheet">
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
 </head>
+
 <body>
-	<section class="section1 dark-blue_bg border-bottom_dark">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 text-center">
-					<p class="white_txt strong">
-						Sick of wasting time chasing up dead-end prospects and
-						<br>harassing friends and family to join your MLM business?
-					</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="section2 tangaroa_bg">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 text-center">
-					<p class="bright-yellow_bg black_txt strong">What If You Could Stop All The Chasing and Instead…</p>
-					<p class="big strong white_txt ">
-					“Be FOUND By The Exact Right People You Need To GROW Your Downline FASTER and EASIER Than Ever Before?”</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="section3 border-bottom">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 text-center big ">
-					<p class="grey_txt strong">“Now You Too Can Recruit <br>
-					<span class="endeavour_txt strong">MORE QUALITY RECRUITS, BUILD Your BUSINESS</span> and <span class="endeavour_txt strong">BOOST Your PROFITS…</span>
-					<br>For FREE!”</p>
-					<br><a class="signup-btn" href="#">Sign Up Now</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="section4">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 text-center">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YXdkZLSOFCM"></iframe>
-					</div>
-					<p class="brown_txt">
-						Do you know where the money REALLY
-					<br>
-						is in your MLM business?
-					</p>
-					<img src="assets/img/section4_img_01.png" alt="">
-					<p>	
-						The truth is, when you run your own business as part of a successful 
-					<br>Multi-Level-Marketing company like you do,
-					</p>
-						<p class="yellow_txt">
-							The REAL money is in your <strong>downline.</strong>
-						</p>
-					<p>
-						Your downline is your biggest asset to increased profits and accelerated business growth.
-					</p>
-					<p>
-						1 can bring in 2. 2 becomes 4. 4 becomes 8. 
-					<br>
-						And business is booming.
-					</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="section5">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 text-center">
-					<h2 class="strong">
-						Why?
-					</h2>
-					<p>
-						Because you need to go out and find the people right?…
-					<br>
-						You need to spend hours and hours excitedly chasing prospects only to find that they go ‘cold’.
-					<br>
-						You doing all the hard work,
-					</p>
-					<h1 class="big border-topdown">
-						Seeking out potential prospects… 
-					<br>
-						Getting past the FEAR of the approach.
-					</h1>
-					<p>
-						Making dead end calls or wasting time sending emails that get ignored.
-					</p>
-					<p>
-						Pinning all your hopes on a prospect, chasing them up with hopeful anticipation…only to find the chase goes cold.
-					</p>
-					<p class="strong">
-						Wrong.
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="section6">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
-					<p>It’s a common misconception is that it’s YOUR job to go out and find your downline. To chase them… and find them and ‘sign them up’. 
-					</p>
-					<p>
-					But ask yourself… What is the reaction when something is chased? 
-					</p>
-					<p class="theanswer">The answer… <strong>it RUNS AWAY.</strong></p> 
-					<p>Right?</p>
-					<p>However, when those same people WILLINGLY respond – and seek out for themselves the opportunity you present, how much more likely will it be – that they will ‘stick’ and continue to grow with your leadership and direction?
-					</p>
-					<p class="text-center"><img src="assets/img/section6_img.png" alt=""></p>
-					<p class="tangaroa_bg white_txt">
-					Your responsibility is to provide leadership. 
-					<br>Direction and encouragement.
-					</p>
-					<p class="text-center">
-					It’s NOT to go out and chase so hard that one day you will turn around and realise there is nobody left within ‘chasing distance’ of you. 
-					</p>
-					<div class="text-center">
-						<a class="signup-btn center" href="#" href="#">Sign Up Now</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="section7 dark-blue_bg white_txt">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 text-center">
-					<h1>And when you think about it the other way round…
-					<br>It makes so much more sense.
-					<br><span class="strong">To Let your recruits <span class="yellow_txt">FIND YOU.</span></span></h1>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="section8">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
-					<p>It has been proved that the quality of your recruits is the single most important factor in growing your downline quickly and effectively.
-				</div>
-				<div class="col-xs-12 border-black text-center">
-					<img src="assets/img/section8_img.png" alt="">
-					<h2>Think about it...</h2>
-					<p>						
-						If a person has already made the all important decision to search for an opportunity for themselves.  
-					</p>
-					<p>
-						<strong>They’ve already made a pretty big commitment…
-						<br>They’ve proved they’re keen, willing and able…</strong>
-					</p>
-					<p>
-						And it means it’s going to be SO much easier to convert them from prospects into active and willing business partners.
-					</p>
-				</div>
-				<div class="col-xs-12">
-					<p>
-						It’s a proven FACT that prospects who search, themselves, for a company to join are 10 x more likely to be active, successful and profitable.
-					</p>
-				</div>
-				<div class="col-xs-12 dark-grey_bg">
-					<p class="web-orange_txt text-center">
-						And that means YOU will be much more successful and profitable because you are <br>
-						doing things the right way. Make Sense?
-					</p>
-				</div>
-				<div class="col-xs-12">
-					<p>And now you know - you need to be able to be FOUND by your prospects.</p>
-					<p>And by giving yourself an opportunity to be ‘found’…</p>
-					<p>You are giving yourself the very best opportunity of recruiting, active, successful and profitable prospects.</p>
-					<p class="growing big strong">Growing your downline, building your business, and massively <br> increasing your profits.</p>
-					<p class="yousee bigger">You see, there’s people out there, looking for opportunities in your business,<br>
-					<p class="looking strong">
-						Looking for you. Looking to be successful. Looking to profit.
-					</p>
-					<p class="andhtes bigger">And these are the people <strong>YOU</strong> need.<br>
-					These are the people who are looking for you.</p>
-					<p class="nowall strong">Now all you need to do is to help them to find you.</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="section9 light-grey_bg">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 text-center">
-					<h3><span class="web-orange_txt"><strong>And how do you do that?</strong></span></h3>
-					<p>Easy.</p>
-					<img src="assets/img/section9_img.png" alt="">
-					<p>EveryMLM.com is a site where hungry prospects can find YOU - and you can represent yourself as a business authority with a powerful online presence.</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="section10 tangaroa_bg white_txt">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
-					<h2 class="web-orange_txt text-center">With EveryMLM.com’s completely FREE listing, 
-					<br>You will be heads above the rest with a professional online profile,
-					<br>Representing you and your business.</h2>
-					<h3>You will get to:</h3>
-					<ul>
-						<li>Let your prospects FIND YOU.</li>
-						<li>Grow your downline quicker and with more quality than ever before.</li>
-						<li>Recruit, active, successful and profitable recruits.</li>
-						<li>Position yourself as a leader (remember when you do this, people will naturally follow you!)</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="section11 madison_bg white_txt">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
-					<p><strong>You will:</strong></p>
-					<ul>
-						<li>Get noticed.</li>
-						<li>Get found.</li>
-						<li>Get contacted.</li>
-						<li>Get the RIGHT people to join your business.</li>
-						<li>Get out there and list your business and events</li>
-						<li>Position yourself as a leader.</li>
-						<li>Boost your status and business authority.</li>
-					</ul>		
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="section12">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
-					<p>And best of all. You get to stop wasting your time chasing and harassing everyone that comes into arms reach. 
-					The people that you need are looking for you.</p>
-					<p>And with a business listing on EveryMLM.com, they WILL be able to find you.</p>
-					<h5 class="text-center">And the best thing?<br> It’s COMPLETELY FREE!</h5>
-					<p class="text-center"><a class="signup-btn" href="#">Sign Up Now</a></p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="section13">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
-					<p>Just imagine,</p>
-					<p>No more chasing prospects only to find they go ‘cold’.</p>
-					<p>No more dead end calls…</p>
-					<p>No more cold fear at the thought of just one more approach.</p>
-					<p>No more chasing. Not anymore.</p>					
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="section14">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
-					<p>With a free listing on EveryMLM.com you will have yourself the BEST possible opportunity to grow your all important downline. And – it is able to be duplicated.</p>
-					<p>Your new business partners can do the same thing, to grow their own businesses the right way, from day one.</p>
-					<p>EveryMLM.com is non company specific directory site which means we support the Multi-Level-Marketing industry as a whole.</p>
-					<p>So you can rest assured that we have only YOUR best interests at heart.</p>
-					<h5 class="text-center">No one else’s. We want you to succeed. </h5>
-					<p>We want you to have the most successful business you can. And with your business and yourself listed with EveryMLM.com</p>
-					<p>We’ll make sure that you have the very best chance possible to build, grown and boost your business, and your profits.</p>
-					</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="section15 light-grey_bg">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 text-center ">
-					<h5>Totally for free!</h5>
-					<p>So sign up for free now and put yourself you head and shoulders above the rest.
-					<br>We really look forward to hearing your success stories with EveryMLM.com</p>
-					<img src="assets/img/salesletter4.png" class="img-responsive" alt="" title="">
-					<a class="signup-btn" href="#">Sign Up Now</a>
-					<p>P.S. You have absolutely NOTHING to lose as sign up is completely FREE. And you only have more, better quality recruits and inflated profits to gain…</p>
-					<p><strong>So, stop chasing and start BEING FOUND with EveryMLM.com</strong></p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<footer class="tangaroa_bg">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
-					<p>
-						Copyrights 2015 <a href="#">EveryMLM.com.</a> All Rights Reserved. 
-						<a class="cfx-logo" href="http://www.calibreworks.com"><img src="assets/img/logo-calibreworks.jpg"></a>
-					</p>
-				</div>
-			</div>
-		</div>
-	</footer>
-	
-	<script src="assets/js/jquery-1.11.2.min.js" type="text/javascript" charset="utf-8" async defer></script>
-	<script src="assets/js/wow.min.js" type="text/javascript" charset="utf-8" async defer></script>
-	<script src="assets/js/function.js" type="text/javascript" charset="utf-8" async defer></script>
+    <div class="wrapper">
+        <div class="container">
+            <header>
+                <div class="row">
+                    <div class="navbar">
+                        <div class="navbar-header">
+                            <button class="navbar-toggle collapsed" data-target=".navbar-collapse" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand" href="#">DRIBBBLEFOLIO</a>
+                        </div>
+
+                        <div class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li>
+                                    <a href="#">About</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Resume</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Contact</a>
+                                </li>
+                            </ul>
+
+                            <ul class="nav navbar-nav social">
+                                      <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
+                                      <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
+                                      <li><a href="#"> <i class="fa fa-github"></i> </a> </li>  
+                                      <li><a href="#"> <i class="fa fa-linkedin"></i> </a></li>
+                                      <li><a href="#"> <i class="fa fa-envelope"></i> </a></li>
+                            </ul>
+                        </div><!-- /.nav-collapse -->
+                    </div><!-- /.navbar -->
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                        <h1 class="intro"><span>Hello</span> <span>I’m</span> John Doe <span>, Designer &amp; Coder </span></h1>
+                    </div>
+                </div>
+            </header>
+
+            <div class="row grid-list-wrapper no-gutter-space" id="shots">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h1>Portfolio1</h1>
+                    </div>
+
+                     <div class="col-md-3">
+                        <h1>Portfolio1</h1>
+                    </div>
+
+                     <div class="col-md-3">
+                        <h1>Portfolio1</h1>
+                    </div>
+
+                     <div class="col-md-3">
+                        <h1>Portfolio1</h1>
+                    </div>
+                 </div>
+            </div>
+         </div>
+
+         
+    </div>
+
+    <footer>
+        <div class="container">
+            <nav class="nav-footer">
+                <ul>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Resume</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+
+                                  <ul>
+                                      <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
+                                      <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
+                                      <li><a href="#"> <i class="fa fa-github"></i> </a> </li>  
+                                      <li><a href="#"> <i class="fa fa-linkedin"></i> </a></li>
+                                      <li><a href="#"> <i class="fa fa-envelope"></i> </a></li>
+                                  </ul>
+
+                <p class="credits text-center">&copy; All Rights Reserved 2015</p>
+            </nav>
+        </div>
+
+    </footer>
 </body>
 </html>
