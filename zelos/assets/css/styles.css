@@ -299,10 +299,18 @@ textarea {
     border-radius: 17px;
     border: 0;
 }
+.btn-visit:hover,
+.form-contact input[type="submit"]:hover,
 .btn-post-job:hover {
-    color: #ffffff;
+    color: #eabc12;
 }
-
+.btn-visit:hover {
+    background: #152335;
+}
+#search #search-form input[type="submit"]:hover,
+.title-link a:hover {
+    color: #000000;
+}
 /*:: Gontact
 ------------------------- */
 #contact {
@@ -355,6 +363,9 @@ textarea {
     text-align: left;
     margin-bottom: 10px;
 }
+#footer .footer-menu a:hover {
+    color: #ffffff;
+}
 .footer-sosmed li + li,
 .footer-menu li + li {
     margin-left: 20px;
@@ -373,20 +384,25 @@ textarea {
     #header .navbar-default .navbar-nav>li>a {
         padding: 10px 23px;
     }
-    #header .navbar-default .navbar-nav>.active>a, 
-    #header .navbar-default .navbar-nav>.active>a:hover, 
+    #header .navbar-default .navbar-nav>.active>a,  
     #header .navbar-default .navbar-nav>.active>a:focus {
         background: transparent;
         -webkit-border-radius: 17px;
         -moz-border-radius: 17px;
         border-radius: 17px;
         border: 2px solid #ffffff;
+    }    
+    #header .navbar-default .navbar-nav>.active>a:hover,
+    #header .navbar-default .navbar-nav>li>a:hover {
+        color: #eabc12;
+        border-color: #eabc12;
     }
     #header .splash {
         max-width: 635px;
         margin: 215px auto;
         display: block;
     }
+    #job-listing,
     #popular-job {
         margin-bottom: 30px;
     }
