@@ -399,7 +399,7 @@ textarea {
     }
     #header .splash {
         max-width: 635px;
-        margin: 215px auto;
+        margin: 115px auto;
         display: block;
     }
     #job-listing,
@@ -416,6 +416,9 @@ textarea {
     #header {
         padding-top: 100px;
     }
+    #header .splash {
+        padding-bottom: 25px;
+    }
     #header.fixed .navbar-default {
         background-color: #152335;
     }
@@ -428,13 +431,13 @@ textarea {
     }
     #header .navbar-default .navbar-toggle {
         border-radius: 0;
-        border: 1px solid #ffffff;
+        border: 1px solid #eabc12;
         background: transparent !important;
         margin-top: 12px;
         margin-bottom: 0;
     }
     #header .navbar-default .navbar-toggle .icon-bar {
-        background-color: #ffffff;
+        background-color: #eabc12;
     }
     #header .navbar-default a:hover,
     #header .navbar-default .navbar-nav>.active>a, 
@@ -445,6 +448,7 @@ textarea {
     }
     #header .navbar-nav {
         margin: 0 -15px;
+        height: 100vh;
     }
     .navbar-default .navbar-collapse, 
     .navbar-default .navbar-form {
@@ -458,6 +462,9 @@ textarea {
     #header .navbar {
         margin-bottom: 0;
         padding-bottom: 9px;
+    }
+    #search {
+        padding: 15px 0 !important; 
     }
     #search #search-form input[type="submit"] {
         width: auto;
