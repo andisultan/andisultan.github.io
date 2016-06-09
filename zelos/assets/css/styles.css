@@ -444,7 +444,7 @@ textarea {
     #header .navbar-default .navbar-nav>.active>a:hover, 
     #header .navbar-default .navbar-nav>.active>a:focus {
         background: #152335;
-        color: #ffffff !important;
+        color: #eabc12 !important;
     }
     #header .navbar-nav {
         margin: 0 -15px;
@@ -452,12 +452,12 @@ textarea {
     }
     .navbar-default .navbar-collapse, 
     .navbar-default .navbar-form {
-        border-color: #000000;
+        border-color: #eabc12;
         margin-top: 10px;
-        background: #ffffff;
+        background: #152335;
     }
     #header .navbar-default a {
-        color: #152335 !important;
+        color: #ffffff !important;
     }
     #header .navbar {
         margin-bottom: 0;
