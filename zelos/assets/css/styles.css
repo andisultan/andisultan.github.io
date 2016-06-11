@@ -377,7 +377,7 @@ textarea {
 
 /*:: Responsive
 ------------------------- */
-@media ( min-width: 768px ) {
+@media ( min-width: 767px ) {
     #header .navbar-default .navbar-nav>li+li {
         margin-left: 20px;
     }
@@ -412,7 +412,8 @@ textarea {
 
 }
 
-@media ( max-width: 768px ) { 
+
+@media ( max-width: 767px ) { 
     #header {
         padding-top: 100px;
     }
@@ -446,6 +447,13 @@ textarea {
         background: #152335;
         color: #eabc12 !important;
     }
+    #header .navbar-default a {
+        color: #ffffff !important;
+    }
+    #header .navbar {
+        margin-bottom: 0;
+        padding-bottom: 9px;
+    }
     #header .navbar-nav {
         margin: 0 -15px;
         height: 100vh;
@@ -455,13 +463,6 @@ textarea {
         border-color: #eabc12;
         margin-top: 10px;
         background: #152335;
-    }
-    #header .navbar-default a {
-        color: #ffffff !important;
-    }
-    #header .navbar {
-        margin-bottom: 0;
-        padding-bottom: 9px;
     }
     #search {
         padding: 15px 0 !important; 
