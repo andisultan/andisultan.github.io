@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <h1>Tabs</h1>
+
+    <div class="tabs">
+      <ul class="tabs__list" role="tablist">
+        <li><button type="button" role="tab" aria-controls="tab1" aria-selected="true" id="tab-1">Tab 1</button></li>
+        <li><button type="button" role="tab" aria-controls="tab2" aria-selected="false" tabindex="-1" id="tab-2">Tab 2</button></li>
+        <li><button type="button" role="tab" aria-controls="tab3" aria-selected="false" tabindex="-1" id="tab-3">Tab 3</button></li>
+      </ul>
+      <div role='tabpanel' aria-labelledby="tab-1" id="tab1" tabindex="0" class="tabs__panel active">
+        <h2>Tab 1</h2>
+        <p>Lorem ipsum dolor sit amet, urna class vestibulum tincidunt atque, habitasse sit wisi erat dapibus. Vitae curae natoque a, donec nulla conubia in mollis.</p>
+      </div>
+      <div role='tabpanel' aria-labelledby="tab-2" id="tab2" tabindex="0" class="tabs__panel">
+        <h2>Tab 2</h2>
+        <p>Lorem ipsum dolor sit amet, urna class vestibulum tincidunt atque, habitasse sit wisi erat dapibus. Vitae curae natoque a, donec nulla conubia in mollis.</p>
+      </div>
+      <div role='tabpanel' aria-labelledby="tab-3" id="tab3" tabindex="0" class="tabs__panel">
+        <h2>Tab 3</h2>
+        <p>Lorem ipsum dolor sit amet, urna class vestibulum tincidunt atque, habitasse sit wisi erat dapibus. Vitae curae natoque a, donec nulla conubia in mollis.</p>
+      </div>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

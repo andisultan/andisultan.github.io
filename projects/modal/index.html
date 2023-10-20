@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="app">
+    <button data-modal="btn-show">Show Modal</button>
+  </div>
+
+  <div class="modal-overlay" data-modal="overlay">
+    <div class="modal">
+      <header class="modal__header">
+        <h3 class="modal__header-title">Modal Title</h3>
+        <button data-modal="btn-close" aria-label="close modal">X</button>
+      </header>
+      <main class="modal__body">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci consectetur iste, consequuntur repellat magni amet, saepe aspernatur omnis, autem perspiciatis voluptate minus. Explicabo ducimus sed adipisci! Veniam aut quam incidunt.</p>
+      </main>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
