@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="app">
+    <h1>Counter</h1>
+    <div class="counter">
+      <div class="counter__number" data-counter="number">0</div>
+      <button data-counter="decrease">Decrease</button>
+      <button data-counter="reset">Reset</button>
+      <button data-counter="increase">Increase</button>
+    </div>
+  </div>
+  <script>
+    let count = 0
+    const counter = document.querySelector('.counter')
+    const counterNumber = document.querySelector('[data-counter="number"]')
+
+    counter.addEventListener('click', function(event) {
+      event.preventDefault()
+
+      if (event.target.matches('[data-counter="decrease"]')) {
+        count--
+      }
+
+      if (event.target.matches('[data-counter="reset"]')) {
+        count = 0
+      }
+
+      if (event.target.matches('[data-counter="increase"]')) {
+        count++
+      }
+
+      counterNumber.textContent = count
+    })
+  </script>
+</body>
+</html>
