@@ -77,3 +77,8 @@ li {
   background-color: lightseagreen;
   color: #fff;
 }
+
+.open-source {
+  padding: 48px 0;
+  border-top: 1px solid #000;
+}

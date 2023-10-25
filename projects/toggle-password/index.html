@@ -3,17 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Form Toggle Password</title>
+  <title>Toggle Password</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="app app-dom"></div>
-  <div class="app app-native">
+  <div class="app">
+    <h1>Toogle Password</h1>
     <form class="form">
-      <input type="text" name="username" class="input-username" placeholder="Username">
-      <input type="password" name="password" class="input-password" placeholder="Password">
-      <button class="btn-submit" type="submit" aria-pressed="false">Submit</button>
-      <button class="btn-toggle-password" aria-pressed="false">Toggle Password</button>
+      <div class="form__input">
+        <input type="text" name="username" class="js-input-username" placeholder="Username" />
+      </div>
+      <div class="form__input">
+        <input type="password" name="password" class="js-input-password" placeholder="Password" />
+        <button type="button" aria-pressed="false" class="js-button-toggle-view-password">Show</button>
+      </div>
+      <button type="submit">Submit</button>
     </form>
   </div>
   <script src="./script.js"></script>

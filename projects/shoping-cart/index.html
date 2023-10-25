@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shoping Cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <nav class="nav">
+        <div class="nav__logo">
+          <a href="./index.html">TokoQu</a>
+        </div>
+        <div class="nav__menu">
+          <ul>
+            <li>
+                <span class="nav__cart">
+                  <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <circle cx="6" cy="19" r="2"></circle>
+                    <circle cx="17" cy="19" r="2"></circle>
+                    <path d="M17 17h-11v-14h-2"></path>
+                    <path d="M6 5l14 1l-1 7h-13"></path>
+                  </svg>
+                  <span class="nav__cart-count js-cart"></span>
+                </span>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <ul class="product js-products">
+        <li class="product__item">
+          <a href="#">
+            <img src="./images/product-1.webp" loading="lazy" alt="product-1" />
+            <h3>Product 1</h3>
+            <p>Rp. 100.000</p>
+            <button data-id="1" data-stock="10" data-img="./images/product-1.webp" data-title="Product 1" data-price="100000" class="js-add-to-cart">Add to cart</button>
+          </a>
+        </li>
+        <li class="product__item">
+          <a href="#">
+            <img src="./images/product-2.webp" loading="lazy" alt="product-2" />
+            <h3>Product 2</h3>
+            <p>Rp. 200.000</p>
+            <button data-id="2" data-stock="10" data-img="./images/product-2.webp" data-title="Product 2" data-price="200000" class="js-add-to-cart">Add to cart</button>
+          </a>
+        </li>
+        <li class="product__item">
+          <a href="#">
+            <img src="./images/product-3.webp" loading="lazy" alt="product-3" />
+            <h3>Product 3</h3>
+            <p>Rp. 300.000</p>
+            <button data-id="3" data-stock="10" data-img="./images/product-3.webp" data-title="Product 3" data-price="300000" class="js-add-to-cart">Add to cart</button>
+          </a>
+        </li>
+        <li class="product__item">
+          <a href="#">
+            <img src="./images/product-4.webp" loading="lazy" alt="product-4" />
+            <h3>Product 4</h3>
+            <p>Rp. 400.000</p>
+            <button data-id="4" data-stock="10" data-img="./images/product-4.webp" data-title="Product 4" data-price="400000" class="js-add-to-cart">Add to cart</button>
+          </a>
+        </li>
+      </ul>
+    </main>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

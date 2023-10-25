@@ -23,14 +23,14 @@ function stopWatch() {
       }
   }
 
-  timer.innerText = `${hours.toString().padEnd(2, 0)}:${minutes.toString().padEnd(2, 0)}:${seconds.toString().padEnd(2, 0)}`
+  timer.innerText = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`
 }
 
 btnPlay.addEventListener('click', function(event) {
   event.preventDefault()
 
   if(timetStatus === 'stopped') {
-    timeInterval = window.setInterval(stopWatch, 100)
+    timeInterval = window.setInterval(stopWatch, 1000)
     this.innerText = 'Stop'
     timetStatus = 'started'
   } else {
