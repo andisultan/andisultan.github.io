@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Docker</title>
+</head>
+<body>
+  <h1>Docker</h1>
+
+  <h2>Docker Cheat Sheet</h2>
+  <code>
+    Docker Basic Commands
+
+    // check docker version
+    docker version
+
+    // check docker info
+    docker info
+
+    // download an image from docker hub
+    docker pull <image_name>
+
+    // list local docker images
+    docker images or docker image ls
+
+    // list running containers
+    docker ps or docker container ls
+
+    // list all containers
+    docker ps -a or docker container ls -a
+
+    // create and start a new container from an image
+    docker run <image_name>
+
+    ** Docker Container Lifecycle **
+
+    // start an stopped container
+    docker start <container_name/id>
+
+    // stop a running container gracefully
+    docker stop <container_name/id>
+
+    // forcefully stop a running container
+    docker kill <container_name/id>
+
+    // restart a container
+    docker restart <container_name/id>
+
+    // remove a stopped container
+    docker rm <container_name/id>
+
+    ** Images **
+
+    // build a docker image from a Dockerfile
+    docker build -t <image_name> <path_to_Dockerfile>
+
+    // remove an image
+    docker rmi <image_name>
+
+    // remove all unused images
+    docker image prune
+
+    Docker Compose
+
+    // start services defined in a docker-compose.yml file
+    docker-compose up
+
+    // stop and remove services defined in a docker-compose.yml file
+    docker-compose down
+
+    // list services in a Compose file and their status
+    docker-compose ps
+
+    // view logs for a specific service
+    docker-compose logs <service_name>
+
+    // run a command in a running service container
+    docker-compose exec <service_name> <command>
+
+
+    Valume
+
+    // create a named volume
+    docker volume create <volume_name>
+
+    // mount a volume to a container
+    docker run -v <volume_name>:<container_path> <image_name>
+
+    // list volumes
+    docker volume ls
+
+    // remove a volume
+    docker volume rm <volume_name>
+
+    Docker Registry and Hub
+
+    // log in to a docker registry
+    docker login
+
+    // push an image to a registry
+    docker push <image_name>
+
+    // pull an image from a registry
+    docker pull <image_name>
+
+    Networks
+
+    // create a user-defined network
+    docker network create <network_name>
+
+    // list networks
+    docker network ls
+
+    // connect a container to a network
+    docker network connect <network_name> <container_name/id>
+
+    // disconnect a container from a network
+    docker network disconnect <network_name> <container_name/id>
+
+    Logs and Debugging
+
+    // view container logs
+    docker logs <container_name/id>
+
+    // start an interactive shell in a running container
+    docker exec -it <container_name/id> /bin/bash
+
+    // display realtime container resource usage
+    docker stats <container_name/id>
+
+    Cleanup
+
+    // remove all stopped containers, unused networks, and image
+    docker system prune
+
+    // remove all stopped containers
+    docker container prune
+
+    // remove all unused networks
+    docker network prune
+
+    // remove all unused images
+    docker image prune
+
+  </code>
+</body>
+</html>

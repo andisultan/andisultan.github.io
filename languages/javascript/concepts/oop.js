@@ -66,3 +66,31 @@ try {
 } catch (error) {
   console.log(`terjadi error: ${error.message}`)
 }
+
+
+class Cart {
+  #items = []
+
+  get items() {
+    return this.#items
+  }
+
+  add(name, qty = 1) {
+    let isExist = this.#items.find(item => item.name === name)
+    if(isExist) {
+      isExist.qty += qty
+      return
+    }
+
+    this.#items.push({item, qty})
+  }
+
+  remove(name) {
+    let index = this.#items.findIndex(item => item.name === name)
+    if(index === -1) {
+      return
+    }
+
+    this.#items.splice(index, 1)
+  }
+}
