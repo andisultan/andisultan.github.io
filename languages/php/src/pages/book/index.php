@@ -30,62 +30,66 @@ if ( $action == 'add' ) {
 
 if ( $action == 'create' ) {
     if ( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
-        upload_image( $_FILES['image'] );
-        
-        $book = new Book();
-        $result = $book->insert( $_POST, $_FILES );
-
-        if ( $result ) {
-            header('Location: index.php?page=book');
-        } else {
-            echo 'Error';
-        }
-    } else {
         echo 'Empty form';
-    } 
+        return;
+    }
+
+    upload_image( $_FILES['image'] );
+
+    $book = new Book();
+    $result = $book->insert( $_POST, $_FILES );
+
+    if ( $result ) {
+        header('Location: index.php?page=book');
+    } else {
+        echo 'Error';
+    }
 }
 
 if ( $action == 'edit' ) {
-    if ( $book_id !== '') {
-        $book = new Book();
-        $result = $book->get_by_id( $book_id );
-        
-        if ( $result ) {
-            require_once PAGES . 'book/edit.php';
-        } else {
-            echo 'Error';
-        }
-    } else {
+    if ( $book_id == '') {
         echo 'No Book selected';
+        return;
+    }
+
+    $book = new Book();
+    $result = $book->get_by_id( $book_id );
+    
+    if ( $result ) {
+        require_once PAGES . 'book/edit.php';
+    } else {
+        echo 'Error';
     }
 } 
 
 if ( $action == 'update' ) {
-    if ( $book_id !== '' && $_SERVER['REQUEST_METHOD'] == 'POST' ) {
-        $book = new Book();
-        $result = $book->update( $book_id, $_POST );
-
-        if ( $result ) {
-            header('Location: index.php?page=book');
-        } else {
-            echo 'Error';
-        }
-    } else {
+    if ( $book_id == '' && $_SERVER['REQUEST_METHOD'] !== 'POST' ) {
         echo 'No Book selected';
+        return;
+    }
+
+    $book = new Book();
+    $result = $book->update( $book_id, $_POST );
+
+    if ( $result ) {
+        header('Location: index.php?page=book');
+    } else {
+        echo 'Error';
     }
 }
 
 if ( $action == 'delete' ) {
-    if ( $book_id !== '') {
-        $book = new Book();
-        $result = $book->delete( $book_id );
-
-        if ( $result ) {
-            header('Location: index.php?page=book');
-        } else {
-            echo 'Error';
-        }
-    } else {
+    if ( $book_id == '') {
         echo 'No Book selected';
+        return;
+    }
+
+    $book = new Book();
+    $result = $book->delete( $book_id );
+
+    if ( $result ) {
+        header('Location: index.php?page=book');
+    } else {
+        echo 'Error';
     }
 }
