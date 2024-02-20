@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Manipulation</title>
+</head>
+<body>
+  <section class="parents">
+    <h1>Heading</h1>
+    <ul class="list">
+      <li class="item-1">List 1</li>
+      <li class="item-2">List 2</li>
+      <li class="item-3">List 3</li>
+    </ul>
+    <p class="inner">this just content example <span hidden>Hidden</span></p>
+  </section>
+
+
+  <div class="app"></div>
+
+  <script>
+    // Create a new observer
+    let observer = new IntersectionObserver(function (entries, obs) {
+      entries.forEach(function (entry) {
+
+          // If the entry is not in the viewport, do nothing
+          if (!entry.isIntersecting) return;
+
+          // Stop observing
+          obs.unobserve(entry.target);
+
+          // Add text
+          entry.target.textContent += ` I'm in the viewport now.`;
+
+      });
+    });
+
+    const parent = document.querySelector('.parents');
+    observer.observe(parent);
+    
+
+    
+
+    // memilih elemen pertama = document.querySelector()
+    // memilih semua elemen = document.querySelectorAll()
+    // Element.matches() mengecek apakah elemen cocok dengan selector tertentu
+    // fo of loop untuk perulangan array dan mengembalikan value dari array tersebut
+    // for in loop untuk perulangan object dan mengembalikan key dari object tersebut
+    // forEach loop untuk perulangan array dan mengembalikan value dari array tersebut
+    // Element.closest() mencari elemen terdekat yang cocok dengan selector tertentu
+    // Element.previousElementSibling mencari elemen sebelumnya
+    // Element.nextElementSibling mencari elemen setelahnya
+    // Element.parentElement mencari elemen parent
+    // Element.children mencari elemen children
+    // Element.firstElementChild mencari elemen pertama
+    // Element.lastElementChild mencari elemen terakhir
+    // Element.remove() menghapus elemen
+    // Element.setAttribute() menambahkan atribut
+    // Element.getAttribute() mendapatkan atribut
+    // Element.removeAttribute() menghapus atribut
+    // Element.classList.add() menambahkan class
+    // Element.classList.remove() menghapus class
+
+    // Attribute
+    // Element.getAttribute() mendapatkan atribut
+    // Element.setAttribute() menambahkan atribut
+    // Element.removeAttribute() menghapus atribut
+    // Element.hasAttribute() mengecek apakah elemen memiliki atribut tertentu
+
+    //const h1 = document.querySelector('h1');
+    //console.log(window.getComputedStyle(h1).backgroundColor);
+
+    // Listen for all focus events in the document
+    // document.addEventListener('click', function (event) {
+    //     // Run functions whenever an element in the document comes into focus
+    //     console.log('An element has received focus: ', event.target);
+    // }, true);
+
+  </script>
+</body>
+</html>

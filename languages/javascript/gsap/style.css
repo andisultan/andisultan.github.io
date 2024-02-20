@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.main {
+  max-width: 80%;
+  margin: 50px auto;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+.stagger,
+.stagger2 {
+  position:relative;
+  
+  display: flex;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: chocolate;
+}

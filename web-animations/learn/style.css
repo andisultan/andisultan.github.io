@@ -1,0 +1,228 @@
+:root {
+  --lg-screen: 1024px;
+  --md-screen: 768px;
+  --sm-screen: 640px;
+  --xs-screen: 480px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.h-full {
+  height: 100%;
+}
+.h-vh {
+  min-height: 100vh;
+}
+
+.inner {
+  padding: 100px;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+.z-1 {
+  z-index: 1;
+}
+.z-2 {
+  z-index: 2;
+}
+.z-3 {
+  z-index: 3;
+}
+
+.flex {
+  display: flex;
+}
+.flex__half {
+  width: 50%;
+  display: flex;
+}
+.flex--column {
+  flex-direction: column;
+}
+.flex--center {
+  align-items: center;
+  justify-content: center;
+}
+.flex--center-between {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bg-orange {
+  background-color: orange;
+}
+.bg-green {
+  background-color: green;
+}
+.bg-blue {
+  background-color: blue;
+}
+.bg-yellow {
+  background-color: yellow;
+}
+.bg-red {
+  background-color: red;
+}
+.bg-purple {
+  background-color: purple;
+}
+
+.text-white {
+  color: #fff;
+}
+.text-center {
+  text-align: center;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+}
+
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.absolute--tl {
+  top: 0;
+  left: 0;
+}
+.absolute--tr {
+  top: 0;
+  right: 0;
+}
+.absolute--bt {
+  bottom: 0;
+  left: 0;
+}
+.absolute--br {
+  bottom: 0;
+  right: 0;
+}
+
+/* HEADER 
+-------------------------------------------------------------------------------------- */
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+
+.header__inner {
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 24px 46px;
+}
+.header__logo {
+  width: 100px;
+}
+.header__nav {
+  width: calc(100% - 100px); 
+}
+.header__nav-toggle {
+  display: none;
+  background-color: transparent;
+  border: 1px solid #777;
+  padding: 8px 12px;
+}
+.header__menus {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header__menu a {
+  text-decoration: none;
+  color: #444;
+  display: block;
+  padding: 6px 12px;
+}
+.header__menu a:hover {
+  color: #000;
+}
+
+
+.section-one h1 {
+  font-size: 120px;
+  font-weight: 900;
+}
+.section-one p {
+  font-size: 20px;
+}
+/* ------------------------------------------------------------
+  RESPONSIVE DESIGN 
+------------------------------------------------------------- */
+
+/* LARGE SCREEN: 
+------------------------------------------------------------- */
+@media screen and (max-width: var(--lg-screen)) {
+  
+  
+}
+
+/* MEDIUM SCREEN: 
+------------------------------------------------------------- */
+@media screen and (max-width: var(--md-screen)) {
+  
+  /* HEADER */
+
+}
+
+/* SMALL SCREEN: 
+------------------------------------------------------------- */
+@media screen and (max-width: var(--sm-screen)) {
+
+  /* HEADER */
+  
+}
+
+/* XTRA SMALL SCREEN: 
+-------------------------------------------------------------*/
+@media screen and (max-width: var(--xs-screen)) {
+
+  /* HEADER */
+  
+}

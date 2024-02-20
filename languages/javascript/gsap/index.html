@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lean GSAP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main">
+    <p><strong>To, From, FromTo</strong></p>
+    <hr>
+    <p class="to">To</p>
+    <p class="from">From</p>
+    <p class="fromTo">FromTo</p>
+    <hr>
+    <p><strong>Stagger</strong></p>
+    <hr>
+    <div class="stagger">
+      <div><b>S</b></div>
+      <div><b>U</b></div>
+      <div><b>L</b></div>
+      <div><b>T</b></div>
+      <div><b>A</b></div>
+      <div><b>N</b></div>
+    </div>
+    <div class="stagger2">
+      <div><b>S</b></div>
+      <div><b>U</b></div>
+      <div><b>L</b></div>
+      <div><b>T</b></div>
+      <div><b>A</b></div>
+      <div><b>N</b></div>
+    </div>
+    <hr>
+    <p><strong>Tween Control</strong></p>
+    <hr>
+    <div class="tweenControl">
+      <p class="object"><b>Object</b></p>
+      <button class="play">Play</button>
+      <button class="pause">Pause</button>
+      <button class="reverse">Reverse</button>
+      <button class="restart">Restart</button>
+    </div>
+    <hr>
+    <p><strong>Tranform Origin</strong></p>
+    <hr>
+    <div class="box"></div>
+  </div>
+  <!-- script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+  <script>
+   /**
+    * repeat: 1, untuk mengulang animasi 1 kali
+    * repeat: -1, untuk mengulang animasi secara terus menerus
+    * duration: 2, untuk mengatur durasi animasi 2 detik
+    * y: 300, untuk mengatur posisi animasi 300px dari atas atau vertikal
+    * x: 300, untuk mengatur posisi animasi 300px dari kiri atau horizontal
+    * ease: "linear", untuk mengatur animasi dengan efek linear
+    * ease: "bounce", untuk mengatur animasi dengan efek bounce
+    * ease: "elastic", untuk mengatur animasi dengan efek elastic
+    * ease: "back", untuk mengatur animasi dengan efek back
+    * ease: "power1", untuk mengatur animasi dengan efek power1
+    * scale: 2, untuk mengatur animasi dengan efek scale 2x
+    * yoyo: true, untuk mengatur animasi dengan efek yoyo
+    * */
+    // to
+    gsap.to(".to", { x: 300, duration: 2, repeat: 1 });
+    // from
+    gsap.from(".from", { x: 300, duration: 2 });
+    // fromTo
+    gsap.fromTo(".fromTo", { x: 300, duration: 2 }, { y: 100, duration: 2 });
+    // stagger
+    gsap.from(".stagger div", { x: -200, duration: 2, stagger: 0.5 });
+    gsap.from(".stagger2 div", { x: -200, duration: 2, stagger: { each: 1, from: 'center'} });
+    // control
+    const object = document.querySelector(".object");
+    const play = document.querySelector(".play");
+    const pause = document.querySelector(".pause");
+    const reverse = document.querySelector(".reverse");
+    const restart = document.querySelector(".restart");
+    const tween = gsap.to(object, { x: 300, duration: 2, paused: true });
+    play.addEventListener("click", () => {
+      tween.play();
+    });
+    pause.addEventListener("click", () => {
+      tween.pause();
+    });
+    reverse.addEventListener("click", () => {
+      tween.reverse();
+    });
+    restart.addEventListener("click", () => {
+      tween.restart();
+    });
+
+    // transform origin
+    const box = gsap.to(".box", { transformOrigin: "30px 80px", yoyo: true, repeat: 1, rotation: -45 });
+    // const box = gsap.to(".box", { transformOrigin: "top left", yoyo: true, repeat: 1, rotation: -45 });
+    const boxTrigger = document.querySelector(".box");
+    boxTrigger.addEventListener("click", () => box.restart());
+  </script>
+</body>
+</html>
